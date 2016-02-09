@@ -2,36 +2,16 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 mainClassName = "examples.HelloWorld"
-project.ext{
-    artifactRepoBase = "http://cr-scm01.de.bosch.com:8081/nexus/content/repositories"
-}
+
+/*Currently using local jar from lib folder*/
 repositories {
-    maven {
-        url "${artifactRepoBase}/central/"
-        credentials {
-            // Define "nexus_user" and "nexus_password" in ~/.gradle/gradle.properties
-            username nexus_user
-            password nexus_password
-        }
-    }
-    // Pull upa-specific dependencies
-    maven {
-        url "${artifactRepoBase}/upa-public/"
-        credentials {
-            username nexus_user
-            password nexus_password
-        }
+    flatDir {
+        dirs 'lib'
     }
 }
-
 dependencies {
-    //compile project(':libraries:uhu-factory')
-    compile "com.bosch.upa.uhu:uhu-factory:2.0"
+    compile name: 'uhu-main-launcher'
 }
 
-//jar {
-//    manifest {
-//        attributes 'Implementation-Title': 'helloWorld', 'Implementation-Version': version
-//    }
-//}
+//TODO: Use publicly accessible repository for managing dependencies instead of local jars
 
