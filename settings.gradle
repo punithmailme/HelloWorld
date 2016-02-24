@@ -1,2 +1,3 @@
-include ':java'
 rootProject.name = 'HelloWorld'
+include ':java', ':android'
+

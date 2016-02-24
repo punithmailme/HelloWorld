@@ -24,3 +24,13 @@ gradlew run
 
 ### Prerequisites 
 * Android device with version 4.1 or higher
+* Bezirk app (For users with access to pydio, download from -> http://52.18.79.103/pydio/ws-default/bezirk-apps)
+
+### Usage
+
+#### Android Studio
+* Connect android device to PC/Laptop or use an android-emulator device.
+* Install & run the bezirk application.
+* Install the android application.
+
+#### Command line
