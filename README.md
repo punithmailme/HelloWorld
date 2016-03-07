@@ -2,20 +2,21 @@
 
 ### Prerequisites 
 * Oracle JRE (or JDK) 1.7 (or higher)
+* OS -> windows, linux or OSX
 
 ### Usage
 
 #### Android Studio [Tested with version 1.5.1]
 *Import Project*
 ```
-File -> New -> Import Project -> helloWorld
+File -> New -> Import Project -> HelloWorld
 ```
 *Running application*
 ```
 right-click HelloWorld.java -> select option: Run 'HelloWorld.main()'
 ```
 #### Command-line
-*From within the folder helloWorld/java*
+*From within the folder HelloWorld/java*
 ```
 gradlew run
 ```
@@ -34,3 +35,5 @@ gradlew run
 * Install the android application.
 
 #### Command line
+
+*TODO*
