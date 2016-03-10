@@ -1,4 +1,4 @@
-package bezirk.android.examples;
+package com.bezirk.examples;
 
 import org.junit.Test;
 

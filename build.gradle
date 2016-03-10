@@ -6,3 +6,10 @@ buildscript {
         classpath 'com.android.tools.build:gradle:1.2.+'
     }
 }
+
+/**
+ * Cleanup databases, logs and build files
+ */
+task cleanUp(type: Delete) {
+    delete 'data', 'logs', 'build', 'java/data', 'java/logs', 'java/build', 'android/build'
+}

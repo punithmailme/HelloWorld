@@ -1,23 +1,18 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "examples.HelloWorld"
+mainClassName = "com.bezirk.examples.HelloWorld"
 
 /*Currently using local jar from lib folder*/
 repositories {
     flatDir {
-        dirs 'lib'
+        dirs 'libs'
     }
 }
 
-//TODO: Use publicly accessible repository for managing dependencies instead of local jars
+//TODO: Change to publicly accessible repository for managing dependencies instead of local jars
 dependencies {
-    compile name: 'uhu-main-launcher'
-    compile 'com.bosch.upa.uhu:uhu-factory:2.0'
-    compile 'com.bosch.upa.uhu:uhu-API:2.0'
-    compile 'com.bosch.upa.uhu:uhu-API-impl:2.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-task clean << {
-    delete 'data', 'logs', 'build'
-}
+
