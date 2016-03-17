@@ -12,7 +12,7 @@ java -version
 
 ### Usage
 
-#### Command-line
+#### Command-line/Terminal
 
 ##### Mac (OSX)
 
@@ -21,6 +21,11 @@ From within the root project folder (HelloWorld-******)
 *configure*
 ```
 sh scripts/osx_configure.sh
+```
+
+*refresh variables for current terminal instance* 
+```
+source ~/.bash_profile
 ```
 
 *run*
@@ -35,6 +40,11 @@ From within the root project folder (HelloWorld-******)
 *configure*
 ```
 sh scripts/linux_configure.sh
+```
+
+*refresh variables for current terminal instance* 
+```
+source ~/.bash_profile
 ```
 
 *run*
