@@ -57,10 +57,9 @@ source ~/.bash_profile
 From within the root project folder (HelloWorld-******)
 
 *configure*
-//TODO
+Add the absolute path C:\Users\<username>\AppData\Local\Temp\lib-zeromq-bin to the system Path variable.
  
 *run*
-//check
 ```
 gradlew.bat run
 ```
