@@ -20,7 +20,7 @@ def nativeLibPath
 
 run {
     systemProperties = System.getProperties()
-    nativeLibPath = System.getProperty("java.io.tmpdir") + "${LIB_BIN_FOLDER}" + File.pathSeparator + systemProperties['java.library.path'];
+    nativeLibPath = System.getProperty("java.io.tmpdir") + File.separator+ "${LIB_BIN_FOLDER}" + File.pathSeparator + systemProperties['java.library.path'];
     systemProperties['java.library.path'] = nativeLibPath;
     println "PATH: " + systemProperties['java.library.path']
 }
