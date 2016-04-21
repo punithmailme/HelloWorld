@@ -57,6 +57,7 @@ source ~/.bash_profile
 From within the root project folder (HelloWorld-******)
 
 *configure*
+
 Add the absolute path C:\Users\<username>\AppData\Local\Temp\lib-zeromq-bin to the system Path variable.
  
 *run*
