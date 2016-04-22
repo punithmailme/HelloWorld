@@ -8,16 +8,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.bezirk.api.IBezirk;
-import com.bezirk.api.addressing.Address;
-import com.bezirk.api.addressing.ServiceId;
-import com.bezirk.api.messages.Event;
-import com.bezirk.api.messages.Message;
+import com.bezirk.middleware.Bezirk;
+import com.bezirk.middleware.addressing.Address;
+import com.bezirk.middleware.addressing.ServiceId;
+import com.bezirk.middleware.messages.Event;
+import com.bezirk.middleware.messages.Message;
 import com.bezirk.proxy.android.Factory;
 
 public class HelloWorldActivity extends AppCompatActivity {
 
-    private IBezirk bezirk;
+    private Bezirk bezirk;
     private ServiceId myId;
 
     @Override

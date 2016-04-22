@@ -1,17 +1,17 @@
 package com.bezirk.examples;
 
-import com.bezirk.api.IBezirk;
-import com.bezirk.api.addressing.Address;
-import com.bezirk.api.addressing.ServiceId;
-import com.bezirk.api.messages.Event;
-import com.bezirk.api.messages.Message.Stripe;
+import com.bezirk.middleware.Bezirk;
+import com.bezirk.middleware.addressing.Address;
+import com.bezirk.middleware.addressing.ServiceId;
+import com.bezirk.middleware.messages.Event;
+import com.bezirk.middleware.messages.Message.Stripe;
 import com.bezirk.proxy.Factory;
 
 import javax.swing.JOptionPane;
 
 public class HelloWorld {
 
-    private IBezirk bezirk;
+    private Bezirk bezirk;
     private ServiceId myId;
 
     public HelloWorld() {
