@@ -15,12 +15,12 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-def final String LIB_BIN_FOLDER = "lib-zeromq-bin"
-def nativeLibPath
-
-run {
-    systemProperties = System.getProperties()
-    nativeLibPath = System.getProperty("java.io.tmpdir") + File.separator+ "${LIB_BIN_FOLDER}" + File.pathSeparator + systemProperties['java.library.path'];
-    systemProperties['java.library.path'] = nativeLibPath;
-    println "PATH: " + systemProperties['java.library.path']
-}
+//def final String LIB_BIN_FOLDER = "lib-zeromq-bin"
+//def nativeLibPath
+//
+//run {
+//    systemProperties = System.getProperties()
+//    nativeLibPath = System.getProperty("java.io.tmpdir") + File.separator+ "${LIB_BIN_FOLDER}" + File.pathSeparator + systemProperties['java.library.path'];
+//    systemProperties['java.library.path'] = nativeLibPath;
+//    println "PATH: " + systemProperties['java.library.path']
+//}
