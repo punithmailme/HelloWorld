@@ -2,4 +2,4 @@ rootProject.name = 'HelloWorld'
 include ':java'
 
 /*Uncomment to run android helloworld*/
-include ':android'
+//include ':android'
