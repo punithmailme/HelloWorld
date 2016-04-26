@@ -3,18 +3,11 @@ apply plugin: 'application'
 
 mainClassName = "com.bezirk.examples.HelloWorld"
 
-/*Currently using local jar from lib folder*/
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
-//TODO: Change to publicly accessible repository for managing dependencies instead of local jars
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(group: 'com.bezirk', name: 'bezirk-factory', version: '2.0.6')
 }
 
+/*Configuration for running zeromq zyre*/
 def final String LIB_BIN_FOLDER = "lib-zeromq-bin"
 def nativeLibPath
 
@@ -22,5 +15,4 @@ run {
     systemProperties = System.getProperties()
     nativeLibPath = System.getProperty("java.io.tmpdir") + File.separator+ "${LIB_BIN_FOLDER}" + File.pathSeparator + systemProperties['java.library.path'];
     systemProperties['java.library.path'] = nativeLibPath;
-    println "PATH: " + systemProperties['java.library.path']
 }

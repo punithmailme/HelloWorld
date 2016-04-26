@@ -69,15 +69,16 @@ gradlew.bat run
 ## Android Project
 ### Prerequisites 
 * Device with android version 4.1 or higher
-* Bezirk app installed on Android device (For users with access to pydio, download from -> http://52.18.79.103/pydio/ws-default/bezirk-apps)
 * Android Studio http://developer.android.com/sdk/installing/index.html
 
 ### Usage
 #### Android Studio
 * Import as gradle project [File -> New -> Import -> HelloWorld]
+* Connect android device to PC/Laptop.
+* Install android/bezirk-app/control-ui-debug.apk
 * In settings.gradle file -> Uncomment the following line.
 ```
 //include ':android'
 ```
-* Connect android device to PC/Laptop.
+* Rebuild HelloWorld project [Build -> Rebuild Project]
 * Install the android helloworld application.
