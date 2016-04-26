@@ -6,13 +6,3 @@ mainClassName = "com.bezirk.examples.HelloWorld"
 dependencies {
     compile(group: 'com.bezirk', name: 'bezirk-factory', version: '2.0.6')
 }
-
-/*Configuration for running zeromq zyre*/
-def final String LIB_BIN_FOLDER = "lib-zeromq-bin"
-def nativeLibPath
-
-run {
-    systemProperties = System.getProperties()
-    nativeLibPath = System.getProperty("java.io.tmpdir") + File.separator+ "${LIB_BIN_FOLDER}" + File.pathSeparator + systemProperties['java.library.path'];
-    systemProperties['java.library.path'] = nativeLibPath;
-}
