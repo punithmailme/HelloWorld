@@ -56,7 +56,7 @@ source ~/.bash_profile
 
 *configure*
 
-Add the absolute path C:\Users\\**USERNAME**\AppData\Local\Temp\lib-zeromq-bin to the system Path variable.
+Add the absolute path C:\Users\\**\<username\>**\AppData\Local\Temp\lib-zeromq-bin to the system Path variable.
 
 *run*
 
