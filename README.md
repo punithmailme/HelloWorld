@@ -16,7 +16,7 @@ java -version
 
 ##### Mac (OSX)
 
-From within the root project folder (HelloWorld-******)
+From within the root project folder (HelloWorld-master)
 
 *configure*
 ```
@@ -35,7 +35,7 @@ source ~/.bash_profile
 
 ##### Linux Systems
 
-From within the root project folder (HelloWorld-******)
+From within the root project folder (HelloWorld-master)
 
 *configure*
 ```
@@ -54,13 +54,13 @@ source ~/.bash_profile
 
 ##### Windows
 
-From within the root project folder (HelloWorld-******)
-
 *configure*
 
-Add the absolute path C:\Users\<username>\AppData\Local\Temp\lib-zeromq-bin to the system Path variable.
- 
+Add the absolute path C:\Users\\**USERNAME**\AppData\Local\Temp\lib-zeromq-bin to the system Path variable.
+
 *run*
+
+From within the root project folder (HelloWorld-master)
 ```
 gradlew.bat run
 ```
@@ -73,7 +73,7 @@ gradlew.bat run
 
 ### Usage
 #### Android Studio
-* Import as gradle project [File -> New -> Import -> HelloWorld]
+* Import as gradle project [File -> New -> Import -> HelloWorld-master]
 * Connect android device to PC/Laptop.
 * Install android/bezirk-app/control-ui-debug.apk
 * In settings.gradle file -> Uncomment the following line.
