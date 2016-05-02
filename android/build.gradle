@@ -20,9 +20,9 @@ android {
 }
 
 dependencies {
-    compile(group: 'com.bezirk', name: 'proxy', version: '2.0.6', ext: 'aar')
-    compile(group: 'com.bezirk', name: 'bezirk-middleware-api', version: '2.0.6')
-    compile(group: 'com.bezirk', name: 'bezirk', version: '2.0.6')
+    compile(group: 'com.bezirk', name: 'proxy', version: '3.0.0-alpha', ext: 'aar')
+    compile(group: 'com.bezirk', name: 'bezirk-middleware-api', version: '3.0.0-alpha')
+    compile(group: 'com.bezirk', name: 'bezirk', version: '3.0.0-alpha')
 
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'

@@ -10,15 +10,16 @@ import android.view.MenuItem;
 
 import com.bezirk.middleware.Bezirk;
 import com.bezirk.middleware.addressing.Address;
-import com.bezirk.middleware.addressing.ServiceId;
+import com.bezirk.middleware.addressing.Location;
+import com.bezirk.middleware.addressing.ZirkId;
 import com.bezirk.middleware.messages.Event;
 import com.bezirk.middleware.messages.Message;
-import com.bezirk.proxy.android.Factory;
+import com.bezirk.middleware.proxy.android.Factory;
 
 public class HelloWorldActivity extends AppCompatActivity {
 
     private Bezirk bezirk;
-    private ServiceId myId;
+    private ZirkId myId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class HelloWorldActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         bezirk = Factory.getInstance(this);
-        myId = bezirk.registerService("HelloWorldAndroidService");
+        myId = bezirk.registerZirk("HelloWorldAndroidService");
         sayHello();
     }
 
@@ -57,17 +58,17 @@ public class HelloWorldActivity extends AppCompatActivity {
     public void sayHello() {
         // Steps to publish an even over UhU:
         // 1. set the targeted address
-        Address target = new Address(null);        // local only (no pipes) with no constraints on location: will reach all services in the spheres HelloWorld is a member of
+        Address target = new Address(new Location(null));        // local only (no pipes) with no constraints on location: will reach all services in the spheres HelloWorld is a member of
 
         // 2. set the event to be published
-        Event hello = new Event(Message.Stripe.NOTICE, "Hello World");
+        Event hello = new Event(Message.Flag.NOTICE, "Hello World");
 
         // 3. publish "hello world" to all in the target address
         bezirk.sendEvent(myId, target, hello);
 
         // display the event that was just published
         //System.out.println("Published: " + hello.serialize());
-        successAlert("HelloWorld successful!!!\nPublished Message: " + hello.serialize());
+        successAlert("HelloWorld successful!!!\nPublished Message: " + hello.toJson());
     }
 
     private void successAlert(String message) {

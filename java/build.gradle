@@ -4,7 +4,7 @@ apply plugin: 'application'
 mainClassName = "com.bezirk.examples.HelloWorld"
 
 dependencies {
-    compile(group: 'com.bezirk', name: 'bezirk-factory', version: '2.0.6')
+    compile(group: 'com.bezirk', name: 'bezirk-factory', version: '3.0.0-alpha')
 }
 
 /*Configuration for running zeromq zyre*/
