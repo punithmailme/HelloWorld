@@ -1,4 +1,4 @@
-# HelloWorld Java & Android projects using [Bezirk](http://rb-bezirk.bosch.com/) 
+# HelloWorld Java & Android projects using [Bezirk](http://bezirk.com/) 
 The Java & Android projects showcase how to publish an event using the Bezirk API. 
 
 ## Java
