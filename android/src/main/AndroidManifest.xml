@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <receiver
-            android:name="com.bezirk.proxy.android.IntentMessageReceiver">
+            android:name="com.bezirk.middleware.proxy.android.IntentMessageReceiver">
             <intent-filter>
                 <action android:name="com.bosch.upa.uhu.broadcast" />
                 <category android:name="android.intent.category.DEFAULT" />
