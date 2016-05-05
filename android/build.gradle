@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.bezirk.examples.helloworld"
@@ -24,8 +24,8 @@ dependencies {
     compile(group: 'com.bezirk', name: 'bezirk-middleware-api', version: '3.0.0-alpha')
     compile(group: 'com.bezirk', name: 'bezirk', version: '3.0.0-alpha')
 
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
 
     testCompile 'junit:junit:4.12'
 }
