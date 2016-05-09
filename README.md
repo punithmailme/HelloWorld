@@ -11,9 +11,9 @@ This repository contains one Java SE and one Android project demonstrating how t
 - Linux and Mac OS X: `./gradlew run`
 - Windows: `gradlew.bat run`
 
-#### Android Studio
+#### Android Studio/Other IDEs
 
-To run the Java SE example from Android Studio you must configure your operating system's environment variable used to set the `java.library.path` system property to include the directory where Bezirk's [ZeroMQ](http://zeromq.org/) dependencies are located. 
+To run the Java SE example from Android Studio (recommended) or some other IDE, you must configure your operating system's environment variable used to set the `java.library.path` system property to include the directory where Bezirk's [ZeroMQ](http://zeromq.org/) dependencies are located. 
 
 From the root folder of the cloned repository:
 
