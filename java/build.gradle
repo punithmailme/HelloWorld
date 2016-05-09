@@ -1,7 +1,9 @@
-apply plugin: 'java'
 apply plugin: 'application'
 
 mainClassName = "com.bezirk.examples.HelloWorld"
+
+applicationDefaultJvmArgs = ["-Djava.library.path=" + System.getProperty("java.library.path") +
+    File.pathSeparator + System.getProperty("java.io.tmpdir") + "lib-zeromq-bin" + File.separator]
 
 dependencies {
     compile(group: 'com.bezirk', name: 'bezirk-factory', version: '3.0.0-alpha')
