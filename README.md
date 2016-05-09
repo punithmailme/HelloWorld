@@ -1,84 +1,37 @@
-# HelloWorld Java & Android projects using [Bezirk](http://bezirk.com/) 
-The Java & Android projects showcase how to publish an event using the Bezirk API. 
+# [Bezirk](http://bezirk.com/) HelloWorld for Java SE and Android 
+This repository contains one Java SE and one Android project demonstrating how to configure a basic Bezirk project, fetch the Bezirk API, and publish a simple event using the API. 
 
-## Java
+## Java SE
 ### Prerequisites 
-* Oracle JRE (or JDK) 1.7 [Download](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
-* Verify java installation using windows console/terminal, cmd
-```
-java -version
-```
-* Set JAVA_HOME environment variable [Windows, Unix systems](https://docs.oracle.com/cd/E19509-01/820-3208/inst_cli_jdk_javahome_t/)
+* [Oracle JDK 1.7+](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
 
 ### Usage
-
 #### Command-line/Terminal
 
-##### Mac (OSX)
+- Linux and Mac OS X: `./gradlew run`
+- Windows: `gradlew.bat run`
 
-From within the root project folder (HelloWorld-master)
+#### Android Studio
 
-*configure*
-```
-sh scripts/osx_configure.sh
-```
+To run the Java SE example from Android Studio you must configure your operating system's environment variable used to set the `java.library.path` system property to include the directory where Bezirk's [ZeroMQ](http://zeromq.org/) dependencies are located. 
 
-*refresh variables for current terminal instance* 
-```
-source ~/.bash_profile
-```
+From the root folder of the cloned repository:
 
-*run*
-```
-./gradlew run
-```
+- Linux: `sh scripts/linux_configure.sh`
+- Mac OS X: `sh scripts/osx_configure.sh` 
+- Windows: Add the absolute path C:\Users\\**\<username\>**\AppData\Local\Temp\lib-zeromq-bin to the system's `PATH` variable.
 
-##### Linux Systems
+You will need to restart any instance of Android Studio that is already open for the environment variable changes to have an effect.
 
-From within the root project folder (HelloWorld-master)
-
-*configure*
-```
-sh scripts/linux_configure.sh
-```
-
-*refresh variables for current terminal instance* 
-```
-source ~/.bash_profile
-```
-
-*run*
-```
-./gradlew run
-```
-
-##### Windows
-
-*configure*
-
-Add the absolute path C:\Users\\**\<username\>**\AppData\Local\Temp\lib-zeromq-bin to the system Path variable.
-
-*run*
-
-From within the root project folder (HelloWorld-master)
-```
-gradlew.bat run
-```
-
-
-## Android Project
+## Android
 ### Prerequisites 
-* Device with android version 4.1 or higher
+* Device with Android version 4.1 or higher
 * Android Studio http://developer.android.com/sdk/installing/index.html
 
 ### Usage
 #### Android Studio
-* Import as gradle project [File -> New -> Import -> HelloWorld-master]
-* Connect android device to PC/Laptop.
+* Import as Gradle Project [File -> New -> Import Project... -> HelloWorld]
+* Connect Android device to PC/Laptop.
 * Install android/bezirk-app/control-ui-debug.apk
-* In settings.gradle file -> Uncomment the following line.
-```
-//include ':android'
-```
 * Rebuild HelloWorld project [Build -> Rebuild Project]
-* Install the android helloworld application.
+* Install the Android HelloWorld application.
