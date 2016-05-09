@@ -13,7 +13,7 @@ This repository contains one Java SE and one Android project demonstrating how t
 
 #### Android Studio/Other IDEs
 
-To run the Java SE example from Android Studio (recommended) or some other IDE, you must configure your operating system's environment variable used to set the `java.library.path` system property to include the directory where Bezirk's [ZeroMQ](http://zeromq.org/) dependencies are located. 
+To run the Java SE example from Android Studio (recommended) or some other IDE, you must configure your operating system's environment variable used to set the `java.library.path` system property to include the directory where Bezirk's [ZeroMQ](http://zeromq.org/) dependencies are located. The Bezirk middleware contains copies of these dependencies and automatically copies their correct versions onto the system during the first run.
 
 From the root folder of the cloned repository:
 
@@ -26,7 +26,7 @@ You will need to restart any instance of Android Studio that is already open for
 ## Android
 ### Prerequisites 
 * Device with Android version 4.1 or higher
-* Android Studio http://developer.android.com/sdk/installing/index.html
+* [Android Studio](http://developer.android.com/sdk/installing/index.html)
 
 ### Usage
 #### Android Studio
