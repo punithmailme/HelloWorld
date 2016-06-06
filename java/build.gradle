@@ -9,5 +9,5 @@ applicationDefaultJvmArgs = ["-Djava.library.path=" + System.getProperty("java.l
                                      "lib-zeromq-bin" + File.separator]
 
 dependencies {
-    compile(group: 'com.bezirk', name: 'bezirk-factory', version: '3.0.0-alpha')
+    compile(group: 'com.bezirk', name: 'bezirk-factory', version: '3.0.0-alpha+010')
 }
